@@ -8,12 +8,19 @@ The list of the tutorials is as below:
 | --------------- | ------------- | ---------------- | ----------- |
 | Astra DB | Google Vertex AI | [food_review_vector.ipynb](food_review_vector.ipynb) | [document](doc/food_review_vector.md) |
 
+Please **note** that some tutorials in this repository may use other vector databases like Pinecone. However, these tutorials are primarily intended for comparison with Astra DB.
 
 ------
 
-To use these tutorials, you first need to register a free-tier Astra account and create an Astra Vector Database. ([Link](https://astra.datastax.com)). Optionally but highly recommended, install [Astra CLI](https://awesome-astra.github.io/docs/pages/astra/astra-cli/#1-installation) to make it easier to configure the connection to the Astra Vector database.
+## Prerequisite
 
-Please **NOTE** that the tutorials in the repository have been tested on a locally installed Jupyter notebook. If you want to run it on a cloud-based Jupyter notebook service, you may need to make some minor changes to the code, such as adding code to upload the required files to the cloud Jupyter notebook instance. The main workflow of the code remains the same, such as getting the embedding values for the food reviews, writing them to the database, and making recommendations by executing similarity-based vector searches.
+To use these tutorials, 
+1) You first need to register a free-tier Astra account and create an Astra Vector Database. ([Link](https://astra.datastax.com)). 
+2) Install [Astra CLI](https://awesome-astra.github.io/docs/pages/astra/astra-cli/#1-installation) to make it easier to configure the connection to the Astra Vector database. This is optional but highly recommended.
+
+Please *NOTE* that these tutorials in the repository have been tested on a locally installed Jupyter notebook. If you want to run it on a cloud-based Jupyter notebook service, you may need to make some minor changes to the code, such as adding code to upload the required files to the cloud Jupyter notebook instance. 
+
+However, the main workflow of the code remains the same, such as getting the embedding values for the input texts, writing to the database, and making similarity-based vector searches.
 
 ## Set up and configure the connetion to the Astra Vector database
 
@@ -25,7 +32,7 @@ $ astra setup --token <AstraCS_token>
 ```
 *NOTE*: The specified token value must start by *AstraCS:....*. You can get an AstraCS token by following the instructions in this [doc](https://docs.datastax.com/en/astra-serverless/docs/manage/org/manage-tokens.html#_create_application_token). Make sure that you have the *Organization Administrator* role to avoid any permission limitations later on.
 
-2) Run the following command to create a dotenv environment for the database. This environment is stored in a hidden file called .env. and it contains all the system environment variables needed to connect to the database.
+2) Run the following command to create a dotenv environment for the database. This environment is stored in a hidden file called .env, and it contains all the system environment variables needed to connect to the database.
 
 ```
 $ astra db create-dotenv <database_name> -k <keyspace_name>
