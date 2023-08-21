@@ -1,0 +1,7 @@
+.ipynb_checkpoints
+.idea
+cassio*
+PoC
+.env
+*.json
+bin/test_vertex_ai_embedding.sh
