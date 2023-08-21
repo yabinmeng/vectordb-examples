@@ -13,6 +13,7 @@ $ tree .
 ├── data
 │   └── fine_food_reviews_1k.csv
 └── food_review_vector.ipyn
+```
 
 ## Text Embedding Model
 
@@ -34,5 +35,4 @@ $'{
     { "content": "What is life?"}
   ],
 }'
-
 ```
