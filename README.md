@@ -4,8 +4,8 @@ This repository contains a collection of tutorials that show how to use [DataSta
 
 The list of the tutorials is as below:
 
-| Use Case Cateogy | Vector Database | Embedding API | Jupyter Notebook / Code Example | Description |
-| ---------------- | --------------- | ------------- | ------------------------------- | ----------- |
+| Use Case Cateogy | Vector Database | Embedding API/Service | Jupyter Notebook / Code Example | Description |
+| ---------------- | --------------- | --------------------- | ------------------------------- | ----------- |
 | Recommendation System | Astra DB | Google Vertex AI | [food_review_vector.ipynb](food_review_vector.ipynb) | [document](doc/food_review_vector.md) |
 
 Please **note** that some tutorials in this repository may use other vector databases like Pinecone. However, these tutorials are primarily intended for comparison with Astra DB.

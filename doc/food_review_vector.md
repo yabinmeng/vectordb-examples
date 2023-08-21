@@ -1,6 +1,12 @@
 # Overview
 
-This tutorial shows you how to use DataStax Astra DB to build a food recommendation system based on the similarity of historical food review comments. 
+This tutorial shows you how to use DataStax Astra DB to build a food recommendation system based on the similarity of historical food review comments. From this example, you can:
+
+1) Learn how to get text embeddings in batches using Google Vertex AI.
+2) See how to create a C* table with a vector column in Astra DB.
+3) Discover how to use the C* Python driver (especially through the concurrent module) to efficiently insert data records with embedding values into the C* table.
+4) Understand how to get recommendations based on similarity-based vector search.
+5) Gain knowledge on how to combine similarity-based vector search with regular C* SAI search to make the search more effective and efficient.
 
 ## DataSet
 
